@@ -1,7 +1,7 @@
 // this is imported from node js
 import http from "http"
 
-const PORT = 8080
+const PORT = process.env.PORT
 
 const server = http.createServer((req, res) => {
 
@@ -25,7 +25,7 @@ const server = http.createServer((req, res) => {
     res.writeHead(200, {"Content-Type": "text/html"}) // writeHead method allows you to set both the status code and set the headers
     
     //res.write(`<h3>Hello user</h3>`) // this response sends text to the client when the server starts
-    
+    res.write("<h3 class='greetingText'>Hello User</h3>")
     res.end("<h1>Server Connected</h1>") // have to end the response after doing what you need
 })
 
