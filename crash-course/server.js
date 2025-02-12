@@ -1,9 +1,7 @@
 // this is imported from node js
 import http from "http"
-/* import dotenv from "dotenv"
-
-// load environment variables
-dotenv.config() */
+import fs from "fs/promises"
+import url from "url"
 
 const PORT = process.env.PORT
 const key = process.env.API_key
