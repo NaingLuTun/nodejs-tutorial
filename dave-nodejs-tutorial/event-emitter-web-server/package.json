@@ -2,7 +2,7 @@
   "name": "event-emitter-web-server",
   "version": "1.0.0",
   "description": "Node.js Web Server tutorial",
-  "main": "server.js",
+  "main": "serverTwo.js",
   "scripts": {
     "start": "node server",
     "dev": "nodemon server"
